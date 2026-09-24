@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+    <div class="calculator">
+        <input type="text" class ="display" id="display"        readonly>
+        <div class="button">
+            <button style="background-color: #d8f51f;width: 50%;" onclick="add('7')">7</button>
+            <button style="background-color:blue" onclick="add('8')">8</button>
+            <button style="background-color: crimson;" onclick="add('9')">9</button>
+            <button style="background-color:coral" onclick="add('/')">/</button>
+
+            <button style="background-color: #ff4d6d;width: 40%;" onclick="add('4')">4</button>
+            <button style="background-color: #ffd166;" onclick="add('5')">5</button>
+            <button style="background-color: #06d6a0;" onclick="add('6')">6</button>
+            <button style="background-color: #002c51; width: 60%;" onclick="add('*')">*</button>
+            <button style="background-color:lawngreen" onclick="add('1')">1</button>
+            <button style="background-color: #e601ff;" onclick="add('2')">2</button>
+            <button style="background-color: #358a04;" onclick="add('3')">3</button>
+            <button style="background-color: #19353b;" onclick="add('-')">-</button>
+            <button style="background-color: #440971;" onclick="add('0')">0</button>
+            <button style="background-color: #3d3194; width: 20%;" onclick="add('.')">.</button>
+            <button style="background-color: antiquewhite;" onclick="calculate()">=</button>  
+            <button style="background-color: #2cb9ff;" onclick="add('+')">+</button>
+            <button style="background-color: #ff0000;" onclick="clearDisplay()">C</button>
+
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>

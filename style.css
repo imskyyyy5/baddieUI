@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    min-height: 100vh;
+    
+    background-image: url("c:\\Users\\admin\\Desktop\\irritatingpic.png");
+    background-size: repeat;
+
+}
+.calculator{
+    width : 300px;
+    padding: 20px;
+    border : 2px solid white;
+    animation: rainbow-border 2s infinite;
+   
+
+}
+.calculator:hover{
+    animation: rainbow-border 3s linear infinite;
+}
+@keyframes rainbow-border{
+    0% { border-color: #ff4d6d; }
+    25% { border-color: #ffd166; }
+    50% { border-color: #06d6a0; }
+    75% { border-color: #4dabf7; }
+    100% { border-color: #ff4d6d; }
+}
+.display{
+    width:100%;
+    height : 50px;
+    margin-bottom: 15px;
+    font-size : 35px;
+
+}
+.button{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+button{
+    height: 50px;
+    font-size:30px;
+}
+.button button {
+    transition: transform 0.2s ease;
+}
